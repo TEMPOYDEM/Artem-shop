@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Artem-shop.ru</title>
+	<link rel="stylesheet" type="text/css" href="Artem-shop.ru.css">
+	<style>
+	
+	a{
+		color: cyan;
+	}
+	li{
+		color: cyan;
+	}
+	h3{
+		color: cyan;
+	}
+	figcaption{
+		color: cyan;
+	}
+	span{
+		color: yellow;
+	}
+}
+</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="logo2" ><a href='index.html'>Интернет-магазин электроники от Артема </a></div>
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="televisory.html">Телевизоры</a>
+  <a href="smartfony.html">Смартфоны</a>
+  <a href="bytovaya tehnika.html">Бытовая техника</a>
+  <a href="vstraivaemaya tehnika.html">Встраиваемая техника</a>
+   <a href="kompyuteri.html">Компьютеры</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">Категории</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <script>
+  	function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+  </script>
+</div>
+<div class="logo"><a href="#" ><img src="photo/стиралка.webp" width= "200px" height="400px"></a></div>
+		<h3>Доставка</h3>
+
+		<figure>
+			<figcaption>Партнёры</figcaption> 
+			<div class="logo"><a href="https://fix-price.ru" ><img src="photo/fix.png" width= "150px" height="50px"></a></div>
+			<div class="logo"><a href="https://5ka.ru" ><img src="photo/5.png"width= "50px" height="50px" ></a></div>
+			<div class="logo"><a href="https://ea.com" ><img src="photo/EA.png"width= "50px" height="50px" ></a></div>
+
+		</figure>
+
+		<figure>
+			<div class="logo1"><a href='https://instagram.com/artjom_tjom'> <img src="photo/instagram.png" width= "30px" height="30px"></a></div>
+			<div class="logo1"><a href='https://vk.com/bomjik_v_louis'> <img src="photo/vk.png" width= "32px" height="32px"></a></div>
+
+
+		</figure>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="jquery.backgroundvideo.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			var videobackground = new $.backgroundVideo($('body'), {
+				"align": "centerXY",
+				"width": 1620,
+				"height": 1080,
+				"path": "photo/",
+				"filename": "фон",
+				"types": ["mp4","ogg","webm"],
+				"preload": true,
+				"autoplay": true,
+				"loop": true
+			});
+		});
+	</script>
+	
+	
+	
+</body>
+</html>
